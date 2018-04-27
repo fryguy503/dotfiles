@@ -38,8 +38,8 @@
 
 
 [user]
-	email = me@sdavis.info
-	name = Scott Davis
+	email = 
+	name = 
 [filter "media"]
 	required = true
 	clean = git media clean %f
