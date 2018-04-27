@@ -5,7 +5,7 @@ eval (direnv hook fish)
 set -gx LSCOLORS gxfxcxdxbxegedabagacad
 
 function ls --description 'List contents of directory'
-  command ls -lhFG $argv
+  command ls -lhFG --color $argv
 end
 
 function df --description 'Displays disk free space'
