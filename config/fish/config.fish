@@ -24,3 +24,19 @@ function gdeletemergedcurrent --description 'Delete all local branches that is a
   command git branch --merged | grep -v "\*" | grep -v "master" | xargs -n 1 git branch -d
   command git remote prune origin
 end
+
+function gcp --description 'do a cherry-pick'
+  command git cherry-pick $argv
+end
+
+function clion --description 'Launch Clion'
+  command bash ~/applications/clion/bin/clion.sh &
+end
+
+function phpstorm --description 'Launch PHPStorm'
+  command bash ~/applications/phpstorm/bin/phpstorm.sh &
+end
+
+function goland --description 'Launch Goland'
+  command bash ~/applications/goland/bin/goland.sh &
+end
