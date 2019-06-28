@@ -82,9 +82,11 @@ let g:ctrlp_prompt_mappings = {
 
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 call plug#begin('~/.config/nvim/plugged')
+Plug 'ekalinin/Dockerfile.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'ludovicchabant/vim-gutentags'
 let g:gutentags_cache_dir = '~/.tags_cache'
+let $MIX_ENV = 'test'
 Plug 'neomake/neomake'
 autocmd! BufWritePost * Neomake
 "Plug 'c-brenn/phoenix.vim'
@@ -117,6 +119,7 @@ Plug 'vim-scripts/LargeFile'
 Plug 'StanAngeloff/php.vim'
 Plug 'evidens/vim-twig'
 Plug 'kassio/neoterm'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 set t_Co=256
